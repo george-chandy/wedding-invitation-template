@@ -1,0 +1,103 @@
+/* ---------- buttons ---------- */
+.btn {
+  --btn-bg: transparent;
+  --btn-ink: var(--color-ink);
+  --btn-border: var(--color-line-strong);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  min-height: 3rem; /* ≥ 44px touch target */
+  padding: 0.8rem 1.75rem;
+  border: 1px solid var(--btn-border);
+  border-radius: var(--radius-pill);
+  background: var(--btn-bg);
+  color: var(--btn-ink);
+  font-family: var(--font-ui);
+  font-weight: 500;
+  font-size: var(--fs-button);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.2;
+  text-align: center;
+  transition: background-color var(--dur-fast) ease, color var(--dur-fast) ease, border-color var(--dur-fast) ease, transform var(--dur-fast) var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+}
+.btn svg { flex: none; }
+.btn--solid {
+  --btn-bg: var(--color-btn-bg);
+  --btn-ink: var(--color-btn-ink);
+  --btn-border: var(--color-btn-bg);
+}
+@media (hover: hover) {
+  .btn:hover { border-color: var(--color-ink); transform: translateY(-1px); }
+  .btn--solid:hover { --btn-bg: var(--color-btn-bg-hover); --btn-border: var(--color-btn-bg-hover); }
+}
+.btn:active { transform: translateY(0) scale(0.985); }
+.btn[disabled] { opacity: 0.55; cursor: not-allowed; transform: none; }
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+@media (max-width: 30rem) {
+  .btn-row > .btn { width: 100%; }
+}
+
+/* ---------- ornaments ---------- */
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  color: var(--color-accent);
+}
+.ornament::before,
+.ornament::after {
+  content: '';
+  flex: 1;
+  max-width: 5rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, currentColor);
+}
+.ornament::after { transform: scaleX(-1); }
+.ornament svg { flex: none; }
+
+.rule { height: 1px; background: var(--color-line); border: 0; margin: 0; }
+
+/* ---------- section heading block ---------- */
+.heading { display: grid; gap: var(--space-4); justify-items: start; }
+.heading--center { justify-items: center; text-align: center; }
+
+/* ---------- forms ---------- */
+.field { display: grid; gap: var(--space-2); }
+.field > label,
+.field > legend { font-size: var(--fs-label); letter-spacing: var(--tracking-label); text-transform: uppercase; font-weight: 500; color: var(--color-ink-muted); }
+.input {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--color-line-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-size: 1rem; /* ≥16px prevents iOS zoom on focus */
+  transition: border-color var(--dur-fast) ease, box-shadow var(--dur-fast) ease;
+}
+textarea.input { min-height: 6.5rem; resize: vertical; line-height: 1.5; }
+.input:focus-visible { outline: none; border-color: var(--color-focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-focus) 28%, transparent); }
+fieldset.field { border: 0; padding: 0; margin: 0; min-width: 0; }
+
+.choice-row { display: grid; gap: var(--space-3); grid-template-columns: 1fr 1fr; }
+@media (max-width: 30rem) { .choice-row { grid-template-columns: 1fr; } }
+.choice { position: relative; }
+.choice input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.choice span {
+  display: flex; align-items: center; justify-content: center; gap: var(--space-2);
+  min-height: 3rem; padding: 0.6rem 1rem; text-align: center;
+  border: 1px solid var(--color-line-strong); border-radius: var(--radius-md); background: var(--color-surface);
+  font-size: var(--fs-caption); transition: background-color var(--dur-fast) ease, border-color var(--dur-fast) ease, color var(--dur-fast) ease;
+}
+.choice input:checked + span { background: var(--color-btn-bg); color: var(--color-btn-ink); border-color: var(--color-btn-bg); }
+.choice input:focus-visible + span { outline: 2px solid var(--color-focus); outline-offset: 3px; }
+
+.status { font-size: var(--fs-caption); line-height: 1.5; }
+.status--ok { color: var(--color-ok); }
+.status--error { color: var(--color-error); }

@@ -1,0 +1,150 @@
+/* ===== envelope gate =====
+   Ownership: CSS drives the gate's entrance (.gate__intro) and the hover/pressed states
+   (.env, .env__seal). Motion (see components/envelope/EnvelopeGate.tsx) drives the opening
+   sequence on different elements: .gate, .env__stage, .env__flap, .env__letter, .env__seal-art. */
+
+.gate {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-gate);
+  display: grid;
+  place-items: center;
+  padding: max(var(--space-5), env(safe-area-inset-top)) max(var(--space-5), env(safe-area-inset-right)) max(var(--space-5), env(safe-area-inset-bottom)) max(var(--space-5), env(safe-area-inset-left));
+  background: radial-gradient(ellipse 80% 60% at 50% 42%, var(--color-surface) 0%, var(--color-bg) 72%);
+  overflow: hidden;
+}
+
+.gate__intro {
+  display: grid;
+  justify-items: center;
+  gap: clamp(1.5rem, 5svh, 3rem);
+  animation: gate-in 0.9s var(--ease-out) both;
+}
+@keyframes gate-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+
+.gate__hint { display: grid; justify-items: center; gap: var(--space-3); text-align: center; transition: opacity var(--dur-base) ease; }
+.gate__hint .label { color: var(--color-ink); letter-spacing: var(--tracking-wide); }
+.gate__hint .gate__names { font-family: var(--font-display); font-style: italic; font-size: var(--fs-lead); color: var(--color-ink-muted); line-height: 1.2; }
+.gate[data-stage='opening'] .gate__hint { opacity: 0; pointer-events: none; }
+/* The Skip button stays available while the sequence plays (touch users have no Escape key). */
+
+.gate__skip {
+  position: absolute;
+  bottom: max(var(--space-5), env(safe-area-inset-bottom));
+  left: 50%;
+  translate: -50% 0;
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background: none;
+  color: var(--color-ink-muted);
+  font-size: var(--fs-caption);
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  text-decoration-color: var(--color-line-strong);
+  transition: opacity var(--dur-base) ease, color var(--dur-fast) ease;
+}
+@media (hover: hover) { .gate__skip:hover { color: var(--color-ink); } }
+
+/* ---------- the envelope ---------- */
+.env {
+  display: block;
+  width: clamp(14rem, min(88vw, 30rem, calc((100svh - 15rem) * 1.4)), 30rem);
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: 6px;
+  transition: transform var(--dur-base) var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.env:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 14px; }
+@media (hover: hover) { .env:hover { transform: translateY(-4px); } }
+.env:active { transform: translateY(0) scale(0.992); }
+.env:disabled { cursor: default; }
+
+.env__stage {
+  position: relative;
+  display: block;
+  aspect-ratio: 7 / 5;
+  perspective: 1400px;
+  container-type: inline-size;
+}
+.env__stage > * { position: absolute; display: block; }
+
+/* contact shadow: static gradient, no filter */
+.env__shadow {
+  inset: auto 4% -7% 4%;
+  height: 14%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgb(40 30 10 / 0.32), transparent 70%);
+  z-index: 0;
+}
+.env__back { inset: 0; z-index: 1; background: linear-gradient(180deg, var(--color-paper-dark), color-mix(in srgb, var(--color-paper-dark) 88%, black)); border-radius: 3px; box-shadow: var(--shadow-md); }
+
+.env__letter {
+  left: 6%;
+  right: 6%;
+  top: 9%;
+  height: 84%;
+  z-index: 2;
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  gap: 2cqw;
+  padding-top: 9cqw;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 2px;
+  box-shadow: 0 1px 6px rgb(40 30 10 / 0.16);
+  text-align: center;
+}
+.env__letter::before { /* inset hairline frame */
+  content: '';
+  position: absolute;
+  inset: 2.2cqw;
+  border: 1px solid var(--color-line);
+  pointer-events: none;
+}
+.env__letter-name { font-family: var(--font-display); font-weight: 300; font-size: 10.5cqw; line-height: 1; letter-spacing: -0.01em; color: var(--color-ink); }
+.env__letter-name i { font-weight: 400; color: var(--color-accent-strong); }
+.env__letter-rule { width: 18cqw; height: 1px; background: var(--color-accent); opacity: 0.8; }
+.env__letter-line { font-family: var(--font-ui); font-weight: 500; font-size: 2.3cqw; letter-spacing: 0.3em; text-transform: uppercase; color: var(--color-ink-muted); }
+
+.env__pocket { inset: 0; width: 100%; height: 100%; z-index: 3; pointer-events: none; }
+
+.env__flap {
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 58%;
+  z-index: 5;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+.env__flap > svg { position: absolute; inset: 0; width: 100%; height: 100%; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.env__flap-lining { transform: rotateX(180deg); }
+
+.env__seal {
+  left: 50%;
+  top: 56%;
+  width: 19%;
+  aspect-ratio: 1;
+  z-index: 6;
+  translate: -50% -50%;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+@media (hover: hover) { .env:hover .env__seal { transform: scale(1.07); } }
+.env:active .env__seal { transform: scale(0.93); }
+.env__seal-art { display: block; width: 100%; height: 100%; }
+.env__seal-art svg { width: 100%; height: 100%; filter: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .gate__intro { animation: none; }
+  .env, .env__seal { transition: none; }
+}

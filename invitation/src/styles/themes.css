@@ -1,0 +1,72 @@
+/*
+ * Semantic colour tokens per theme. Components only use these names.
+ * Add a theme by copying a block, changing values, and adding the name to
+ * ThemeName in src/config/types.ts and the validator.
+ * Contrast ratios (WCAG, computed) are against --color-bg unless noted.
+ */
+:root,
+:root[data-theme='ivory'] {
+  color-scheme: light;
+  --color-bg: #f7f2e9; /* paper */
+  --color-bg-alt: #efe7d8; /* deeper paper, alternate sections */
+  --color-surface: #fcf9f3; /* cards, inputs, letter */
+  --color-ink: #1f2a24; /* 13.3:1 */
+  --color-ink-muted: #565e55; /* 6.0:1 (5.5 on bg-alt) */
+  --color-accent: #a8844a; /* decoration, large numerals only (3.1:1) */
+  --color-accent-strong: #7a5a26; /* text-safe accent (5.7:1; 5.2 on bg-alt) */
+  --color-line: #d8ccb4;
+  --color-line-strong: #bfae8b;
+  --color-focus: #7a5a26;
+  --color-overlay: rgb(247 242 233 / 0.94);
+
+  --color-inverse-bg: #1c2620;
+  --color-inverse-ink: #f1e9d8; /* 12.9:1 on inverse-bg */
+  --color-inverse-muted: #b9bdae; /* 8.1:1 */
+  --color-inverse-accent: #d2b67f; /* 8.0:1 */
+  --color-inverse-line: #3a463e;
+
+  --color-seal: #6b2433;
+  --color-seal-hi: #8e3b4b;
+  --color-seal-ink: #ecd6b4;
+  --color-paper-dark: #e4d8bf; /* envelope back / liner */
+  --color-paper-mid: #efe5d0;
+
+  --color-btn-bg: var(--color-ink);
+  --color-btn-ink: var(--color-bg);
+  --color-btn-bg-hover: #31402f;
+  --color-ok: #3f6b45;
+  --color-error: #9a2f2f;
+}
+
+:root[data-theme='midnight'] {
+  color-scheme: dark;
+  --color-bg: #111a1f;
+  --color-bg-alt: #172228;
+  --color-surface: #1d2b32;
+  --color-ink: #efe8da; /* 14.5:1 */
+  --color-ink-muted: #b0b8b0; /* 8.7:1 */
+  --color-accent: #c8a96b;
+  --color-accent-strong: #d9bd84; /* 9.7:1 */
+  --color-line: #30424a;
+  --color-line-strong: #4a6069;
+  --color-focus: #d9bd84;
+  --color-overlay: rgb(17 26 31 / 0.94);
+
+  --color-inverse-bg: #e9e0cf;
+  --color-inverse-ink: #1c2620;
+  --color-inverse-muted: #4d554b;
+  --color-inverse-accent: #7a5a26;
+  --color-inverse-line: #cabf9f;
+
+  --color-seal: #7d2f3d;
+  --color-seal-hi: #a24a5a;
+  --color-seal-ink: #f0dcbb;
+  --color-paper-dark: #24343c;
+  --color-paper-mid: #2b3d45;
+
+  --color-btn-bg: #d9bd84;
+  --color-btn-ink: #111a1f;
+  --color-btn-bg-hover: #e8cf9c;
+  --color-ok: #8fc79a;
+  --color-error: #f09a9a;
+}

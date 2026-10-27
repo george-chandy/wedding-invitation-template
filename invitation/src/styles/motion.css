@@ -1,0 +1,19 @@
+/*
+ * Reduced motion. Motion (the JS library) already skips transforms for these visitors via
+ * <MotionConfig reducedMotion="user"> and the components render static elements; this block removes the
+ * remaining CSS-driven movement. State changes keep a short, non-moving colour transition.
+ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn, .nav__link::after, .nav__toggle-icon::before, .nav__toggle-icon::after { transition-duration: 0.01s; }
+  .btn:hover, .btn:active { transform: none; }
+}
+
+/* Capture mode (?capture): everything static so screenshots are deterministic. See docs/production-readiness-report.md. */
+[data-capture] *,
+[data-capture] *::before,
+[data-capture] *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}

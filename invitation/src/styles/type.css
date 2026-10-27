@@ -1,0 +1,79 @@
+/* Typography roles. Display + body copy: Cormorant. UI, labels, dense text: Montserrat. Script: one accent only. */
+
+.eyebrow,
+.label {
+  font-family: var(--font-ui);
+  font-weight: 500;
+  font-size: var(--fs-label);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--color-accent-strong);
+}
+.eyebrow::before {
+  content: '';
+  width: 2.25rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.7;
+}
+
+.h2 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-heading);
+  letter-spacing: -0.012em;
+  text-wrap: balance;
+}
+.h2 em, .h3 em { font-style: italic; font-weight: 400; }
+
+.h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-heading);
+  text-wrap: balance;
+}
+
+.lead {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-lead);
+  line-height: var(--lh-lead);
+  text-wrap: pretty;
+}
+
+.muted { color: var(--color-ink-muted); }
+.prose p + p { margin-top: var(--space-4); }
+
+.script {
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-size: var(--fs-script);
+  line-height: 1.2;
+  color: var(--color-accent-strong);
+}
+
+.numeral {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-variant-numeric: lining-nums tabular-nums;
+  line-height: 1;
+}
+
+/* centred eyebrows get a matching rule on the right */
+.heading--center .eyebrow::after,
+.footer .eyebrow::after {
+  content: '';
+  width: 2.25rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.7;
+}

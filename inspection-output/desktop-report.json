@@ -1,0 +1,1213 @@
+{
+  "url": "https://ayisha-shahidrizwan.vercel.app/",
+  "title": "Ayisha & Shahid Rizwan — Wedding Invitation",
+  "description": "You are cordially invited to celebrate the wedding of Ayisha and Shahid Rizwan on December 11, 2026 at K Hills Auditorium, Ramanattukara.",
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "documentHeight": 6547
+  },
+  "fonts": [
+    "Montserrat, sans-serif",
+    "Marcellus, Cinzel, serif",
+    "\"Cormorant Garamond\", Georgia, serif",
+    "\"Aref Ruqaa\", Amiri, serif",
+    "\"Playfair Display\", \"Bodoni Moda\", \"Cormorant Garamond\", Georgia, serif",
+    "\"Playfair Display\", serif"
+  ],
+  "sections": [
+    {
+      "tag": "section",
+      "id": null,
+      "className": "relative h-[100svh] w-full bg-[#f6eee3] overflow-hidden select-none flex items-center justify-center",
+      "text": "TAP TO OPEN Ayisha & Shahid Rizwan • 11 December 2026",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 1000
+      },
+      "styles": {
+        "display": "flex",
+        "position": "relative",
+        "backgroundColor": "rgb(246, 238, 227)",
+        "color": "rgb(52, 45, 36)",
+        "fontFamily": "Montserrat, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "0px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "section",
+      "id": "couple",
+      "className": "relative py-20 px-4 sm:px-6 bg-[#faf6f0] text-[#342c22] overflow-hidden",
+      "text": "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ IN THE NAME OF ALLAH, THE MOST BENEFICENT, THE MOST MERCIFUL “And among His signs is that He created for you mates from among yourselves, that you may dwell in tranquility with them, and He has put love and mercy between your hearts.” — SURAH AR-RUM (30:21) — TWO SOULS • ONE SACRED PROMISE Ayisha & Shahid Rizwan United in divine love and tranquility, entering into the blessed covenant of marriage RAHMATH MASKAN • BAITUL RIZWAN BARAKAH & SACRED LIGHT Blessings of Perpetual Harmony Illuminating the path of lifelong companionship, peace, and devotion THE BRIDE Ayisha CHERISHED DAUGHTER OF Shareena A P & Muhammad Faizal V M FAMILY RESIDENCE Rahmath Maskan ",
+      "rect": {
+        "x": 0,
+        "y": 1000,
+        "width": 1440,
+        "height": 2002
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "backgroundColor": "rgb(250, 246, 240)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "Montserrat, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "80px 24px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "footer",
+      "id": null,
+      "className": "text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-display text-[#8c7450] mt-4 font-semibold not-italic",
+      "text": "— SURAH AR-RUM (30:21) —",
+      "rect": {
+        "x": 417,
+        "y": 1428,
+        "width": 606,
+        "height": 17
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(140, 116, 80)",
+        "fontFamily": "Marcellus, Cinzel, serif",
+        "fontSize": "11px",
+        "fontWeight": "600",
+        "lineHeight": "16.5px",
+        "letterSpacing": "3.3px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "16px 0px 0px",
+        "padding": "0px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "section",
+      "id": "countdown",
+      "className": "relative py-24 px-4 sm:px-6 bg-[#f4ecde] text-[#342c22] overflow-hidden border-t border-b border-[#e3d3b6]",
+      "text": "COUNTING DOWN EVERY PRECIOUS MOMENT The Big Day Awaits Friday, 11 December 2026 • 5:00 PM Onwards 48 DAYS : 18 HOURS : 47 MINUTES : 31 SECONDS ADD TO GOOGLE CALENDAR SAVE TO APPLE / OUTLOOK (.ICS) Nikah Ceremony commences at 5:00 PM at K Hills Auditorium",
+      "rect": {
+        "x": 0,
+        "y": 3002,
+        "width": 1440,
+        "height": 733
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "backgroundColor": "rgb(244, 236, 222)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "Montserrat, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "96px 24px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "section",
+      "id": "schedule",
+      "className": "relative py-20 sm:py-24 px-4 sm:px-6 bg-[#faf6f0] text-[#342c22] overflow-hidden",
+      "text": "SACRED PROGRAMME The Nikah Ceremony Friday, 11 December 2026 • K Hills Auditorium, Ramanattukara 11 DEC 2026 5:00 PM ONWARDS The Sacred Nikah Ceremony “Solemnization of the holy marital bond in the presence of beloved family, elders, and well-wishers, followed by prayers and warm hospitality.” K HILLS AUDITORIUM, RAMANATTUKARA",
+      "rect": {
+        "x": 0,
+        "y": 3735,
+        "width": 1440,
+        "height": 970
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "backgroundColor": "rgb(250, 246, 240)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "Montserrat, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "96px 24px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "section",
+      "id": "venue",
+      "className": "relative py-24 px-4 sm:px-6 bg-[#f7f2ea] text-[#342c22] overflow-hidden",
+      "text": "DESTINATION & VENUE K Hills Auditorium Ramanattukara - Farook College Road, Calicut, Kerala K Hills Auditorium WEDDING CELEBRATION VENUE Ramanattukara - Farook College Rd, Kozhikode, Kerala OPEN LOCATION LINK GOOGLE MAPS DIRECTIONS APPLE MAPS DIRECTIONS Copy Address GETTING TO THE VENUE Calicut Intl. Airport (CCJ) ~14 km (20 mins) Kozhikode Railway Station ~15 km (30 mins) Ramanattukara Junction ~2.5 km (5 mins) LIVE MAP VIEW",
+      "rect": {
+        "x": 0,
+        "y": 4705,
+        "width": 1440,
+        "height": 1010
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "backgroundColor": "rgb(247, 242, 234)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "Montserrat, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "96px 24px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "footer",
+      "id": null,
+      "className": "relative overflow-hidden bg-gradient-to-b from-[#f5ebd9] to-[#ecdcbd] text-[#4f4233] pt-20 pb-10 px-4 sm:px-6 border-t border-[#dcc8a3]",
+      "text": "WITH LOVE & GRATITUDE Ayisha & Shahid Rizwan 11 DECEMBER 2026 • K HILLS AUDITORIUM, RAMANATTUKARA “Together with our families, we can't wait to celebrate the beginning of our forever with you.” RAHMATH MASKAN • BAITUL RIZWAN BACK TO TOP In loving celebration of Ayisha & Shahid Rizwan • Crafted with for our beloved guests CREATED BY CSIITT",
+      "rect": {
+        "x": 0,
+        "y": 5716,
+        "width": 1440,
+        "height": 831
+      },
+      "styles": {
+        "display": "block",
+        "position": "relative",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(79, 66, 51)",
+        "fontFamily": "Montserrat, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "80px 24px 40px",
+        "backgroundImage": "linear-gradient(in oklab, rgb(245, 235, 217) 0%, rgb(236, 220, 189) 100%)",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    }
+  ],
+  "headings": [
+    {
+      "tag": "h2",
+      "id": null,
+      "className": "font-calligraphy-arabic text-4xl sm:text-5xl md:text-6xl gold-text tracking-wide leading-[1.35] drop-shadow-[0_2px_10px_rgba(186,146,75,0.2)] pb-1",
+      "text": "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "rect": {
+        "x": 506,
+        "y": 1137,
+        "width": 428,
+        "height": 85
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "\"Aref Ruqaa\", Amiri, serif",
+        "fontSize": "60px",
+        "fontWeight": "400",
+        "lineHeight": "81px",
+        "letterSpacing": "1.5px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "0px 0px 4px",
+        "backgroundImage": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h3",
+      "id": null,
+      "className": "font-script gold-text inline-block text-6xl sm:text-7xl lg:text-8xl leading-[1.08] pb-1",
+      "text": "Ayisha",
+      "rect": {
+        "x": 317,
+        "y": 1823,
+        "width": 278,
+        "height": 108
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "\"Playfair Display\", \"Bodoni Moda\", \"Cormorant Garamond\", Georgia, serif",
+        "fontSize": "96px",
+        "fontWeight": "600",
+        "lineHeight": "103.68px",
+        "letterSpacing": "-0.96px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "0px 0px 4px",
+        "backgroundImage": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h3",
+      "id": null,
+      "className": "font-script gold-text inline-block text-5xl sm:text-6xl lg:text-7xl leading-[1.12] pb-1",
+      "text": "Shahid Rizwan",
+      "rect": {
+        "x": 266,
+        "y": 1982,
+        "width": 380,
+        "height": 165
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "\"Playfair Display\", \"Bodoni Moda\", \"Cormorant Garamond\", Georgia, serif",
+        "fontSize": "72px",
+        "fontWeight": "600",
+        "lineHeight": "80.64px",
+        "letterSpacing": "-0.72px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "0px 0px 4px",
+        "backgroundImage": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h4",
+      "id": null,
+      "className": "font-serif-vintage text-3xl sm:text-4xl font-semibold leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]",
+      "text": "Blessings of Perpetual Harmony",
+      "rect": {
+        "x": 777,
+        "y": 2163,
+        "width": 414,
+        "height": 90
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "\"Cormorant Garamond\", Georgia, serif",
+        "fontSize": "36px",
+        "fontWeight": "600",
+        "lineHeight": "45px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "0px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h3",
+      "id": null,
+      "className": "font-script gold-text block text-5xl sm:text-6xl mt-0.5 pb-1 leading-tight",
+      "text": "Ayisha",
+      "rect": {
+        "x": 224,
+        "y": 2457,
+        "width": 174,
+        "height": 79
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "\"Playfair Display\", \"Bodoni Moda\", \"Cormorant Garamond\", Georgia, serif",
+        "fontSize": "60px",
+        "fontWeight": "600",
+        "lineHeight": "75px",
+        "letterSpacing": "-0.6px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "2px 0px 0px",
+        "padding": "0px 0px 4px",
+        "backgroundImage": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h3",
+      "id": null,
+      "className": "font-script gold-text block text-4xl sm:text-5xl mt-1 pb-1 leading-tight",
+      "text": "Shahid Rizwan",
+      "rect": {
+        "x": 810,
+        "y": 2459,
+        "width": 314,
+        "height": 64
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "\"Playfair Display\", \"Bodoni Moda\", \"Cormorant Garamond\", Georgia, serif",
+        "fontSize": "48px",
+        "fontWeight": "600",
+        "lineHeight": "60px",
+        "letterSpacing": "-0.48px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "4px 0px 0px",
+        "padding": "0px 0px 4px",
+        "backgroundImage": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": null,
+      "className": "mt-4 font-heading text-4xl sm:text-5xl md:text-6xl gold-text tracking-wide leading-tight pb-1",
+      "text": "The Big Day Awaits",
+      "rect": {
+        "x": 450,
+        "y": 3152,
+        "width": 539,
+        "height": 79
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "\"Playfair Display\", serif",
+        "fontSize": "60px",
+        "fontWeight": "400",
+        "lineHeight": "75px",
+        "letterSpacing": "1.5px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "16px 0px 0px",
+        "padding": "0px 0px 4px",
+        "backgroundImage": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": null,
+      "className": "mt-4 font-heading text-4xl sm:text-5xl md:text-6xl gold-text tracking-wide leading-tight pb-1",
+      "text": "The Nikah Ceremony",
+      "rect": {
+        "x": 422,
+        "y": 3884,
+        "width": 595,
+        "height": 79
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "\"Playfair Display\", serif",
+        "fontSize": "60px",
+        "fontWeight": "400",
+        "lineHeight": "75px",
+        "letterSpacing": "1.5px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "16px 0px 0px",
+        "padding": "0px 0px 4px",
+        "backgroundImage": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h3",
+      "id": null,
+      "className": "font-heading gold-text text-2xl sm:text-4xl md:text-5xl font-semibold leading-snug mb-3",
+      "text": "The Sacred Nikah Ceremony",
+      "rect": {
+        "x": 425,
+        "y": 4311,
+        "width": 590,
+        "height": 132
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "\"Playfair Display\", serif",
+        "fontSize": "48px",
+        "fontWeight": "600",
+        "lineHeight": "66px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px 0px 12px",
+        "padding": "0px",
+        "backgroundImage": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": null,
+      "className": "mt-4 font-heading text-4xl sm:text-5xl md:text-6xl gold-text tracking-wide leading-tight pb-1",
+      "text": "K Hills Auditorium",
+      "rect": {
+        "x": 456,
+        "y": 4854,
+        "width": 528,
+        "height": 79
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(52, 44, 34)",
+        "fontFamily": "\"Playfair Display\", serif",
+        "fontSize": "60px",
+        "fontWeight": "400",
+        "lineHeight": "75px",
+        "letterSpacing": "1.5px",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "16px 0px 0px",
+        "padding": "0px 0px 4px",
+        "backgroundImage": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h3",
+      "id": null,
+      "className": "font-serif-vintage text-2xl text-[#2b2218] font-semibold",
+      "text": "K Hills Auditorium",
+      "rect": {
+        "x": 215,
+        "y": 5084,
+        "width": 191,
+        "height": 32
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(43, 34, 24)",
+        "fontFamily": "\"Cormorant Garamond\", Georgia, serif",
+        "fontSize": "24px",
+        "fontWeight": "600",
+        "lineHeight": "32px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "0px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    },
+    {
+      "tag": "h4",
+      "id": null,
+      "className": "text-xs uppercase tracking-[0.2em] font-display text-[#8c7450] font-bold flex items-center gap-2",
+      "text": "GETTING TO THE VENUE",
+      "rect": {
+        "x": 153,
+        "y": 5465,
+        "width": 403,
+        "height": 16
+      },
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(140, 116, 80)",
+        "fontFamily": "Marcellus, Cinzel, serif",
+        "fontSize": "12px",
+        "fontWeight": "700",
+        "lineHeight": "16px",
+        "letterSpacing": "2.4px",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "margin": "0px 0px 16px",
+        "padding": "0px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    }
+  ],
+  "buttons": [
+    {
+      "tag": "button",
+      "id": null,
+      "className": "flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-[#faf6ee] border border-[#d6c19e] text-[#4f4233] text-xs font-display tracking-widest uppercase font-semibold transition-all shadow-sm cursor-pointer",
+      "text": "SAVE TO APPLE / OUTLOOK (.ICS)",
+      "rect": {
+        "x": 722,
+        "y": 3556,
+        "width": 293,
+        "height": 42
+      },
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(79, 66, 51)",
+        "fontFamily": "Marcellus, Cinzel, serif",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "16px",
+        "letterSpacing": "1.2px",
+        "textTransform": "uppercase",
+        "borderRadius": "3.35544e+07px",
+        "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+        "margin": "0px",
+        "padding": "12px 24px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-[#faf6ee] hover:bg-[#f0e7d8] border border-[#e0cfba] text-[#7a654c] text-xs font-display tracking-wider font-medium transition-all cursor-pointer",
+      "text": "Copy Address",
+      "rect": {
+        "x": 157,
+        "y": 5341,
+        "width": 395,
+        "height": 38
+      },
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "backgroundColor": "rgb(250, 246, 238)",
+        "color": "rgb(122, 101, 76)",
+        "fontFamily": "Marcellus, Cinzel, serif",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "lineHeight": "16px",
+        "letterSpacing": "0.6px",
+        "textTransform": "none",
+        "borderRadius": "12px",
+        "boxShadow": "none",
+        "margin": "0px",
+        "padding": "10px 16px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    {
+      "tag": "button",
+      "id": null,
+      "className": "mt-10 flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#fffdf9]/90 hover:bg-white border border-[#d6c19e] text-[#4f4233] text-xs font-display uppercase tracking-widest font-semibold shadow-sm cursor-pointer",
+      "text": "BACK TO TOP",
+      "rect": {
+        "x": 639,
+        "y": 6383,
+        "width": 163,
+        "height": 38
+      },
+      "styles": {
+        "display": "flex",
+        "position": "static",
+        "backgroundColor": "oklab(0.99447 0.000539035 0.00566733 / 0.9)",
+        "color": "rgb(79, 66, 51)",
+        "fontFamily": "Marcellus, Cinzel, serif",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "16px",
+        "letterSpacing": "1.2px",
+        "textTransform": "uppercase",
+        "borderRadius": "3.35544e+07px",
+        "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px",
+        "margin": "40px 0px 0px",
+        "padding": "10px 24px",
+        "backgroundImage": "none",
+        "animationName": "none",
+        "animationDuration": "0s",
+        "transition": "all"
+      }
+    }
+  ],
+  "images": [
+    {
+      "src": "https://ayisha-shahidrizwan.vercel.app/assets/Luxury%20A%20_%20S%20Crown%20Monogram-D2tuTsIB.png",
+      "alt": "Luxury A & S Crown Monogram",
+      "width": 1254,
+      "height": 1254,
+      "loading": "auto"
+    },
+    {
+      "src": "https://ayisha-shahidrizwan.vercel.app/assets/bismillah_floral_art_1792060053463-CypJRr_V.jpg",
+      "alt": "Sacred Islamic illumination with white roses and candlelight",
+      "width": 1200,
+      "height": 896,
+      "loading": "auto"
+    },
+    {
+      "src": "https://ayisha-shahidrizwan.vercel.app/assets/Luxury%20A%20_%20S%20Crown%20Monogram-D2tuTsIB.png",
+      "alt": "Royal A & S Monogram",
+      "width": 1254,
+      "height": 1254,
+      "loading": "auto"
+    },
+    {
+      "src": "https://ayisha-shahidrizwan.vercel.app/assets/Luxury%20A%20_%20S%20Crown%20Monogram-D2tuTsIB.png",
+      "alt": "Royal A & S Monogram",
+      "width": 1254,
+      "height": 1254,
+      "loading": "auto"
+    },
+    {
+      "src": "https://ayisha-shahidrizwan.vercel.app/assets/Luxury%20A%20_%20S%20Crown%20Monogram-D2tuTsIB.png",
+      "alt": "Royal A & S Monogram Seal",
+      "width": 1254,
+      "height": 1254,
+      "loading": "auto"
+    },
+    {
+      "src": "https://ayisha-shahidrizwan.vercel.app/assets/Luxury%20A%20_%20S%20Crown%20Monogram-D2tuTsIB.png",
+      "alt": "Royal A & S Crown Monogram",
+      "width": 1254,
+      "height": 1254,
+      "loading": "auto"
+    }
+  ],
+  "backgroundImages": [
+    {
+      "element": "div",
+      "className": "absolute inset-0 bg-[#f7f0e6] bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.6),rgba(235,220,195,0.4))]",
+      "background": "radial-gradient(rgba(255, 255, 255, 0.6), rgba(235, 220, 195, 0.4))"
+    },
+    {
+      "element": "div",
+      "className": "pointer-events-none absolute inset-x-0 bottom-0 h-36 sm:h-44 bg-gradient-to-t from-[#f6eee3] from-35% via-[#f6eee3]/90 via-70% to-transparent z-15",
+      "background": "linear-gradient(to top, rgb(246, 238, 227) 35%, oklab(0.95237 0.00407997 0.0164999 / 0.9) 70%, rgba(0, 0, 0, 0) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "absolute inset-0 bg-cover bg-center opacity-30 pointer-events-none",
+      "background": "url(\"https://ayisha-shahidrizwan.vercel.app/assets/silk_satin_texture_1792060704252-CZp9oyWd.jpg\")"
+    },
+    {
+      "element": "div",
+      "className": "absolute inset-0 bg-gradient-to-b from-[#faf6f0] via-[#fcfaf7]/70 to-[#f6efe4] pointer-events-none",
+      "background": "linear-gradient(rgb(250, 246, 240) 0%, oklab(0.9858 0.000915289 0.00441915 / 0.7) 50%, rgb(246, 239, 228) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-12 sm:w-16 bg-gradient-to-r from-transparent to-[#ba924b]/70",
+      "background": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.7) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-12 sm:w-16 bg-gradient-to-l from-transparent to-[#ba924b]/70",
+      "background": "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.7) 100%)"
+    },
+    {
+      "element": "h2",
+      "className": "font-calligraphy-arabic text-4xl sm:text-5xl md:text-6xl gold-text tracking-wide leading-[1.35] drop-shadow-[0_2px_10px_rgba(186,146,75,0.2)] pb-1",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "max-w-2xl mx-auto w-full relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-white/90 via-[#fcf8f1]/90 to-[#f8f0e3]/90 border border-",
+      "background": "linear-gradient(oklab(0.999994 0.0000455678 0.0000200868 / 0.9) 0%, oklab(0.980283 0.00145596 0.0100974 / 0.9) 50%, oklab(0.957862 0.00330728 0.0189856 / 0.9) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-8 bg-gradient-to-r from-transparent to-[#ba924b]/50",
+      "background": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.5) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-8 bg-gradient-to-l from-transparent to-[#ba924b]/50",
+      "background": "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.5) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "md:col-span-6 relative rounded-[30px] p-[9px] bg-gradient-to-br from-[#e9d8b4] via-[#faf3e3] to-[#d4b87f] shadow-[0_30px_60px_-20px_rgba(110,85,40,0.3",
+      "background": "linear-gradient(to right bottom in oklab, rgb(233, 216, 180) 0%, rgb(250, 243, 227) 50%, rgb(212, 184, 127) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "absolute inset-0 opacity-[0.14] bg-cover bg-center pointer-events-none",
+      "background": "url(\"https://ayisha-shahidrizwan.vercel.app/assets/silk_satin_texture_1792060704252-CZp9oyWd.jpg\")"
+    },
+    {
+      "element": "div",
+      "className": "absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(232,207,168,0.35),transparent_60%)] pointer-events-none",
+      "background": "radial-gradient(at 50% 0%, rgba(232, 207, 168, 0.35), rgba(0, 0, 0, 0) 60%)"
+    },
+    {
+      "element": "div",
+      "className": "relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-to-br from-[#f1e2c3] via-[#ba924b] to-[#f7eedc] shadow-[0_12px_30px_rgba(150,115,50,0.",
+      "background": "linear-gradient(to right bottom in oklab, rgb(241, 226, 195) 0%, rgb(186, 146, 75) 50%, rgb(247, 238, 220) 100%)"
+    },
+    {
+      "element": "h3",
+      "className": "font-script gold-text inline-block text-6xl sm:text-7xl lg:text-8xl leading-[1.08] pb-1",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-10 sm:w-16 bg-gradient-to-r from-transparent via-[#ba924b] to-[#ba924b]",
+      "background": "linear-gradient(to right in oklab, rgba(0, 0, 0, 0) 0%, rgb(186, 146, 75) 50%, rgb(186, 146, 75) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-10 sm:w-16 bg-gradient-to-l from-transparent via-[#ba924b] to-[#ba924b]",
+      "background": "linear-gradient(to left in oklab, rgba(0, 0, 0, 0) 0%, rgb(186, 146, 75) 50%, rgb(186, 146, 75) 100%)"
+    },
+    {
+      "element": "h3",
+      "className": "font-script gold-text inline-block text-5xl sm:text-6xl lg:text-7xl leading-[1.12] pb-1",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px flex-1 bg-gradient-to-r from-transparent to-[#c5a880]/70",
+      "background": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.747348 0.0160424 0.0617624 / 0.7) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px flex-1 bg-gradient-to-l from-transparent to-[#c5a880]/70",
+      "background": "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, oklab(0.747348 0.0160424 0.0617624 / 0.7) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "md:col-span-6 relative rounded-[30px] p-[9px] bg-gradient-to-br from-[#e9d8b4] via-[#faf3e3] to-[#d4b87f] shadow-[0_30px_60px_-20px_rgba(110,85,40,0.4",
+      "background": "linear-gradient(to right bottom in oklab, rgb(233, 216, 180) 0%, rgb(250, 243, 227) 50%, rgb(212, 184, 127) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-black/10",
+      "background": "linear-gradient(to top, oklab(0 0 0 / 0.8) 0%, oklab(0 0 0 / 0.15) 50%, oklab(0 0 0 / 0.1) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "relative overflow-hidden p-6 sm:p-9 lg:p-10 rounded-[30px] silk-card silk-card-hover flex flex-col justify-between before:absolute before:inset-x-10 b",
+      "background": "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 250, 244, 0.92) 100%)"
+    },
+    {
+      "element": "h3",
+      "className": "font-script gold-text block text-5xl sm:text-6xl mt-0.5 pb-1 leading-tight",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "w-13 h-13 sm:w-14 sm:h-14 rounded-full p-0.5 bg-gradient-to-br from-[#e6cd96] via-[#ba924b] to-[#f1dfb5] shadow-md shrink-0 overflow-hidden",
+      "background": "linear-gradient(to right bottom in oklab, rgb(230, 205, 150) 0%, rgb(186, 146, 75) 50%, rgb(241, 223, 181) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "relative overflow-hidden p-6 sm:p-9 lg:p-10 rounded-[30px] silk-card silk-card-hover flex flex-col justify-between before:absolute before:inset-x-10 b",
+      "background": "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 250, 244, 0.92) 100%)"
+    },
+    {
+      "element": "h3",
+      "className": "font-script gold-text block text-4xl sm:text-5xl mt-1 pb-1 leading-tight",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "w-13 h-13 sm:w-14 sm:h-14 rounded-full p-0.5 bg-gradient-to-br from-[#e6cd96] via-[#ba924b] to-[#f1dfb5] shadow-md shrink-0 overflow-hidden",
+      "background": "linear-gradient(to right bottom in oklab, rgb(230, 205, 150) 0%, rgb(186, 146, 75) 50%, rgb(241, 223, 181) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "absolute inset-0 opacity-[0.18] bg-cover bg-center pointer-events-none",
+      "background": "url(\"https://ayisha-shahidrizwan.vercel.app/assets/silk_satin_texture_1792060704252-CZp9oyWd.jpg\")"
+    },
+    {
+      "element": "div",
+      "className": "absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,250,240,0.9),transparent_65%)] pointer-events-none",
+      "background": "radial-gradient(rgba(255, 250, 240, 0.9), rgba(0, 0, 0, 0) 65%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-8 sm:w-12 bg-gradient-to-r from-transparent to-[#ba924b]/70",
+      "background": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.7) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-8 sm:w-12 bg-gradient-to-l from-transparent to-[#ba924b]/70",
+      "background": "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.7) 100%)"
+    },
+    {
+      "element": "h2",
+      "className": "mt-4 font-heading text-4xl sm:text-5xl md:text-6xl gold-text tracking-wide leading-tight pb-1",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "relative flex-1 min-w-0 py-6 sm:py-8 rounded-2xl silk-card flex flex-col items-center justify-center overflow-hidden before:absolute before:inset-x-4 ",
+      "background": "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 250, 244, 0.92) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "relative block h-[1.15em] overflow-hidden font-heading text-4xl sm:text-6xl font-medium gold-text tabular-nums leading-[1.15]",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "relative flex-1 min-w-0 py-6 sm:py-8 rounded-2xl silk-card flex flex-col items-center justify-center overflow-hidden before:absolute before:inset-x-4 ",
+      "background": "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 250, 244, 0.92) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "relative block h-[1.15em] overflow-hidden font-heading text-4xl sm:text-6xl font-medium gold-text tabular-nums leading-[1.15]",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "relative flex-1 min-w-0 py-6 sm:py-8 rounded-2xl silk-card flex flex-col items-center justify-center overflow-hidden before:absolute before:inset-x-4 ",
+      "background": "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 250, 244, 0.92) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "relative block h-[1.15em] overflow-hidden font-heading text-4xl sm:text-6xl font-medium gold-text tabular-nums leading-[1.15]",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "relative flex-1 min-w-0 py-6 sm:py-8 rounded-2xl silk-card flex flex-col items-center justify-center overflow-hidden before:absolute before:inset-x-4 ",
+      "background": "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 250, 244, 0.92) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "relative block h-[1.15em] overflow-hidden font-heading text-4xl sm:text-6xl font-medium gold-text tabular-nums leading-[1.15]",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "a",
+      "className": "flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#ba924b] via-[#e2cfa7] to-[#ba924b] text-[#2b2115] font-display text-xs tracking",
+      "background": "linear-gradient(to right in oklab, rgb(186, 146, 75) 0%, rgb(226, 207, 167) 50%, rgb(186, 146, 75) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(232,207,168,0.25),transparent_55%)] pointer-events-none",
+      "background": "radial-gradient(at 50% 0%, rgba(232, 207, 168, 0.25), rgba(0, 0, 0, 0) 55%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-8 sm:w-12 bg-gradient-to-r from-transparent to-[#ba924b]/70",
+      "background": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.7) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-8 sm:w-12 bg-gradient-to-l from-transparent to-[#ba924b]/70",
+      "background": "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.7) 100%)"
+    },
+    {
+      "element": "h2",
+      "className": "mt-4 font-heading text-4xl sm:text-5xl md:text-6xl gold-text tracking-wide leading-tight pb-1",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "relative overflow-hidden p-6 sm:p-10 rounded-[30px] silk-card silk-card-hover text-center flex flex-col items-center before:absolute before:inset-x-10",
+      "background": "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 250, 244, 0.92) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "w-16 h-16 sm:w-20 sm:h-20 rounded-full p-1 bg-gradient-to-br from-[#e6cd96] via-[#ba924b] to-[#f1dfb5] shadow-md overflow-hidden",
+      "background": "linear-gradient(to right bottom in oklab, rgb(230, 205, 150) 0%, rgb(186, 146, 75) 50%, rgb(241, 223, 181) 100%)"
+    },
+    {
+      "element": "h3",
+      "className": "font-heading gold-text text-2xl sm:text-4xl md:text-5xl font-semibold leading-snug mb-3",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-8 bg-gradient-to-r from-transparent to-[#ba924b]/50",
+      "background": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.5) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-8 bg-gradient-to-l from-transparent to-[#ba924b]/50",
+      "background": "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.5) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-8 sm:w-12 bg-gradient-to-r from-transparent to-[#ba924b]/70",
+      "background": "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.7) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-8 sm:w-12 bg-gradient-to-l from-transparent to-[#ba924b]/70",
+      "background": "linear-gradient(to left, rgba(0, 0, 0, 0) 0%, oklab(0.683019 0.0175127 0.0998415 / 0.7) 100%)"
+    },
+    {
+      "element": "h2",
+      "className": "mt-4 font-heading text-4xl sm:text-5xl md:text-6xl gold-text tracking-wide leading-tight pb-1",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "p-7 sm:p-8 rounded-3xl silk-card shadow-lg",
+      "background": "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 250, 244, 0.92) 100%)"
+    },
+    {
+      "element": "a",
+      "className": "flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-gradient-to-r from-[#ba924b] via-[#e2cfa7] to-[#ba924b] text-[#2b2115] text-xs f",
+      "background": "linear-gradient(to right in oklab, rgb(186, 146, 75) 0%, rgb(226, 207, 167) 50%, rgb(186, 146, 75) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "p-6 sm:p-7 rounded-3xl silk-card space-y-4",
+      "background": "linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(253, 250, 244, 0.92) 100%)"
+    },
+    {
+      "element": "footer",
+      "className": "relative overflow-hidden bg-gradient-to-b from-[#f5ebd9] to-[#ecdcbd] text-[#4f4233] pt-20 pb-10 px-4 sm:px-6 border-t border-[#dcc8a3]",
+      "background": "linear-gradient(in oklab, rgb(245, 235, 217) 0%, rgb(236, 220, 189) 100%)"
+    },
+    {
+      "element": "div",
+      "className": "absolute inset-0 opacity-[0.14] bg-cover bg-center pointer-events-none",
+      "background": "url(\"https://ayisha-shahidrizwan.vercel.app/assets/silk_satin_texture_1792060704252-CZp9oyWd.jpg\")"
+    },
+    {
+      "element": "div",
+      "className": "w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-gradient-to-br from-[#e6cd96] via-[#ba924b] to-[#f1dfb5] shadow-[0_10px_25px_rgba(150,115,50,0.3)] overf",
+      "background": "linear-gradient(to right bottom in oklab, rgb(230, 205, 150) 0%, rgb(186, 146, 75) 50%, rgb(241, 223, 181) 100%)"
+    },
+    {
+      "element": "p",
+      "className": "mt-3 font-script gold-text inline-block text-5xl sm:text-6xl md:text-7xl leading-tight pb-1",
+      "background": "linear-gradient(135deg, rgb(122, 82, 21) 0%, rgb(184, 134, 45) 40%, rgb(143, 96, 27) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-14 bg-gradient-to-r from-transparent to-[#c5a880]",
+      "background": "linear-gradient(to right in oklab, rgba(0, 0, 0, 0) 0%, rgb(197, 168, 128) 100%)"
+    },
+    {
+      "element": "span",
+      "className": "h-px w-14 bg-gradient-to-l from-transparent to-[#c5a880]",
+      "background": "linear-gradient(to left in oklab, rgba(0, 0, 0, 0) 0%, rgb(197, 168, 128) 100%)"
+    }
+  ],
+  "links": [
+    {
+      "text": "ADD TO GOOGLE CALENDAR",
+      "href": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding%3A%20Ayisha%20%26%20Shahid%20Rizwan&dates=20261211T113000Z/20261211T163000Z&details=You%20are%20cordially%20invited%20to%20celebrate%20the%20Nikah%20and%20Wedding%20reception%20of%20Ayisha%20%26%20Shahid%20Rizwan%20at%20K%20Hills%20Auditorium%2C%20Ramanattukara.&location=K%20Hills%20Auditorium%2C%20Ramanattukara%20-%20Farook%20College%20Rd%2C%20Kozhikode%2C%20Kerala",
+      "target": "_blank"
+    },
+    {
+      "text": "K HILLS AUDITORIUM, RAMANATTUKARA",
+      "href": "https://share.google/azLvMlUDI7GnkLEUY",
+      "target": "_blank"
+    },
+    {
+      "text": "OPEN LOCATION LINK",
+      "href": "https://share.google/azLvMlUDI7GnkLEUY",
+      "target": "_blank"
+    },
+    {
+      "text": "GOOGLE MAPS DIRECTIONS",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=K%20Hills%20Auditorium%20Ramanattukara%20-%20Farook%20College%20Rd%2C%20Kozhikode%2C%20Kerala",
+      "target": "_blank"
+    },
+    {
+      "text": "APPLE MAPS DIRECTIONS",
+      "href": "https://maps.apple.com/?q=K%20Hills%20Auditorium%20Ramanattukara%20-%20Farook%20College%20Rd%2C%20Kozhikode%2C%20Kerala",
+      "target": "_blank"
+    },
+    {
+      "text": "CSIITT",
+      "href": "https://www.csiitt.com/",
+      "target": "_blank"
+    }
+  ],
+  "forms": [],
+  "animations": [
+    {
+      "playState": "running",
+      "currentTime": 0,
+      "timing": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 60000,
+        "easing": "linear",
+        "endDelay": 0,
+        "fill": "none",
+        "iterationStart": 0,
+        "iterations": null
+      },
+      "target": "div"
+    },
+    {
+      "playState": "running",
+      "currentTime": 0,
+      "timing": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 60000,
+        "easing": "linear",
+        "endDelay": 0,
+        "fill": "none",
+        "iterationStart": 0,
+        "iterations": null
+      },
+      "target": "div"
+    },
+    {
+      "playState": "running",
+      "currentTime": 0,
+      "timing": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 2000,
+        "easing": "linear",
+        "endDelay": 0,
+        "fill": "none",
+        "iterationStart": 0,
+        "iterations": null
+      },
+      "target": "span"
+    },
+    {
+      "playState": "running",
+      "currentTime": 0,
+      "timing": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 60000,
+        "easing": "linear",
+        "endDelay": 0,
+        "fill": "none",
+        "iterationStart": 0,
+        "iterations": null
+      },
+      "target": "div"
+    },
+    {
+      "playState": "running",
+      "currentTime": 215.40000000000072,
+      "timing": {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 250,
+        "easing": "ease-out",
+        "endDelay": 0,
+        "fill": "both",
+        "iterationStart": 0,
+        "iterations": 1
+      },
+      "target": "span"
+    }
+  ],
+  "stylesheetUrls": [
+    "https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Marcellus&family=Montserrat:wght@300;400;500;600;700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+    "https://ayisha-shahidrizwan.vercel.app/assets/index-DL0qCjo1.css"
+  ],
+  "resourceUrls": [
+    "https://ayisha-shahidrizwan.vercel.app/assets/index-DL0qCjo1.css",
+    "https://ayisha-shahidrizwan.vercel.app/assets/bismillah_floral_art_1792060053463-CypJRr_V.jpg",
+    "https://ayisha-shahidrizwan.vercel.app/assets/Luxury%20A%20_%20S%20Crown%20Monogram-D2tuTsIB.png",
+    "https://ayisha-shahidrizwan.vercel.app/video/Creating_wedding_invitation_video_20261015155121.mp4",
+    "https://ayisha-shahidrizwan.vercel.app/assets/silk_satin_texture_1792060704252-CZp9oyWd.jpg",
+    "https://ayisha-shahidrizwan.vercel.app/video/Creating_wedding_invitation_video_20261015155121.mp4",
+    "https://ayisha-shahidrizwan.vercel.app/video/Creating_wedding_invitation_video_20261015155121.mp4",
+    "https://ayisha-shahidrizwan.vercel.app/video/Creating_wedding_invitation_video_20261015155121.mp4"
+  ]
+}
