@@ -2,14 +2,14 @@ import { LazyMotion, MotionConfig, domAnimation } from 'motion/react'
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
 import type { Wedding } from '../config'
 import type { SectionId } from '../config/types'
-import { Details } from '../components/sections/Details'
-import { Countdown } from '../components/sections/Countdown'
+// import { Details } from '../components/sections/Details'
+// import { Countdown } from '../components/sections/Countdown'
 import { EnvelopeGate } from '../components/envelope/EnvelopeGate'
 import { Footer } from '../components/sections/Footer'
-import { Gallery } from '../components/sections/Gallery'
+// import { Gallery } from '../components/sections/Gallery'
 import { Hero } from '../components/sections/Hero'
 import { Rsvp } from '../components/sections/Rsvp'
-import { Schedule } from '../components/sections/Schedule'
+// import { Schedule } from '../components/sections/Schedule'
 import { Story } from '../components/sections/Story'
 import { Venue } from '../components/sections/Venue'
 import { SiteNav, type NavItem } from '../components/nav/SiteNav'
@@ -49,21 +49,21 @@ export default function App({ wedding: w }: { wedding: Wedding }) {
   const render: Record<Exclude<SectionId, 'footer'>, () => ReactNode> = {
     hero: () => <Hero key="hero" w={w} play={revealed} nextId={nextId} />,
     story: () => <Story key="story" w={w} />,
-    countdown: () => <Countdown key="countdown" w={w} />,
-    schedule: () => <Schedule key="schedule" w={w} />,
+    // countdown: () => <Countdown key="countdown" w={w} />,
+    // schedule: () => <Schedule key="schedule" w={w} />,
     venue: () => <Venue key="venue" w={w} />,
-    details: () => <Details key="details" w={w} />,
-    gallery: () => <Gallery key="gallery" w={w} />,
+    // details: () => <Details key="details" w={w} />,
+    // gallery: () => <Gallery key="gallery" w={w} />,
     rsvp: () => <Rsvp key="rsvp" w={w} />,
   }
 
   const s = w.strings
   const labels: Partial<Record<SectionId, string>> = {
     story: s.navStory,
-    schedule: s.navSchedule,
-    venue: s.navVenue,
-    details: s.navDetails,
-    gallery: s.navGallery,
+    // schedule: s.navSchedule,
+    // venue: s.navVenue,
+    // details: s.navDetails,
+    // gallery: s.navGallery,
     rsvp: s.navRsvp,
   }
   const navItems: NavItem[] = body.flatMap((id) => (labels[id] ? [{ id, label: labels[id] }] : []))

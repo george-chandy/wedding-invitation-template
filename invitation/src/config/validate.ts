@@ -12,14 +12,15 @@ export class ConfigError extends Error {
 
 const DATE = /^\d{4}-\d{2}-\d{2}$/
 const TIME = /^([01]\d|2[0-3]):[0-5]\d$/
-const SECTION_IDS: readonly SectionId[] = ['hero', 'story', 'countdown', 'schedule', 'venue', 'details', 'gallery', 'rsvp', 'footer']
+const SECTION_IDS: readonly SectionId[] = ['hero', 'story','venue','rsvp', 'footer']
+// const SECTION_IDS: readonly SectionId[] = ['hero', 'story', 'countdown', 'schedule', 'venue', 'details', 'gallery', 'rsvp', 'footer']
 /** Sections that need a matching block of data in the config. */
 const NEEDS_DATA: Partial<Record<SectionId, keyof WeddingConfig>> = {
   story: 'story',
-  countdown: 'countdown',
-  schedule: 'schedule',
-  details: 'details',
-  gallery: 'gallery',
+  // countdown: 'countdown',
+  // schedule: 'schedule',
+  // details: 'details',
+  // gallery: 'gallery',
   rsvp: 'rsvp',
 }
 
@@ -121,22 +122,31 @@ function check(c: WeddingConfig): WeddingConfig {
   }
   if (c.strings) need(Object.values(c.strings).every(str), 'strings: every override must be a string')
 
-  const copy = (name: 'story' | 'countdown' | 'schedule' | 'details' | 'gallery' | 'rsvp') => {
-    const b = c[name]
-    if (b) need(str(b.eyebrow) && text(b.heading), `${name}.eyebrow and ${name}.heading are required`)
+  // const copy = (name: 'story' | 'countdown' | 'schedule' | 'details' | 'gallery' | 'rsvp') => {
+
+const copy = (name: 'story'| 'rsvp') => {
+  const b = c[name]
+  if (b) {
+    need(
+      str(b.eyebrow) && text(b.heading),
+      `${name}.eyebrow and ${name}.heading are required`
+    )
   }
-  ;(['story', 'countdown', 'schedule', 'details', 'gallery', 'rsvp'] as const).forEach(copy)
+}
+
+;(['story', 'rsvp'] as const).forEach(copy)
+  //  ;(['story', 'countdown', 'schedule', 'details', 'gallery', 'rsvp'] as const).forEach(copy)
   if (c.story) {
     need(list(c.story.message) && c.story.message.every(str), 'story.message must be a list of paragraphs')
-    need(list(c.story.chapters), 'story.chapters must be a list (use [] for none)')
+    // need(list(c.story.chapters), 'story.chapters must be a list (use [] for none)')
   }
-  if (c.countdown) need(str(c.countdown.during) && str(c.countdown.after), 'countdown.during and countdown.after must be strings')
-  if (c.schedule) need(list(c.schedule.items), 'schedule.items must be a list')
-  if (c.details) need(list(c.details.items), 'details.items must be a list')
-  if (list(c.story?.chapters)) c.story!.chapters.forEach((ch, i) => need(text(ch?.label) && text(ch?.title) && str(ch?.body), `story.chapters[${i}] needs label, title and body`))
-  if (list(c.schedule?.items)) c.schedule!.items.forEach((it, i) => need(text(it?.title), `schedule.items[${i}].title is required`))
-  if (list(c.details?.items)) c.details!.items.forEach((it, i) => need(text(it?.title) && str(it?.body), `details.items[${i}] needs title and body`))
-  if (c.gallery) need(list(c.gallery.images), 'gallery.images must be a list')
+  // if (c.countdown) need(str(c.countdown.during) && str(c.countdown.after), 'countdown.during and countdown.after must be strings')
+  // if (c.schedule) need(list(c.schedule.items), 'schedule.items must be a list')
+  // if (c.details) need(list(c.details.items), 'details.items must be a list')
+  // if (list(c.story?.chapters)) c.story!.chapters.forEach((ch, i) => need(text(ch?.label) && text(ch?.title) && str(ch?.body), `story.chapters[${i}] needs label, title and body`))
+  // if (list(c.schedule?.items)) c.schedule!.items.forEach((it, i) => need(text(it?.title), `schedule.items[${i}].title is required`))
+  // if (list(c.details?.items)) c.details!.items.forEach((it, i) => need(text(it?.title) && str(it?.body), `details.items[${i}] needs title and body`))
+  // if (c.gallery) need(list(c.gallery.images), 'gallery.images must be a list')
   if (v?.coordinates) {
     const { lat, lng } = v.coordinates
     need(lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180, 'venue.coordinates out of range')
@@ -152,11 +162,11 @@ function check(c: WeddingConfig): WeddingConfig {
     if (key) need(c[key], `sections lists "${id}" but config.${key} is missing — add the data or remove it from sections`)
   })
 
-  if (list(c.schedule?.items)) c.schedule!.items.forEach((it, i) => need(TIME.test(it?.time), `schedule.items[${i}].time must be HH:mm`))
-  if (list(c.gallery?.images)) c.gallery!.images.forEach((img, i) => {
-    need(text(img.alt), `gallery.images[${i}].alt is required (describe the image)`)
-    need(img.width > 0 && img.height > 0, `gallery.images[${i}] needs width and height (prevents layout shift)`)
-  })
+  // if (list(c.schedule?.items)) c.schedule!.items.forEach((it, i) => need(TIME.test(it?.time), `schedule.items[${i}].time must be HH:mm`))
+  // if (list(c.gallery?.images)) c.gallery!.images.forEach((img, i) => {
+  //   need(text(img.alt), `gallery.images[${i}].alt is required (describe the image)`)
+  //   need(img.width > 0 && img.height > 0, `gallery.images[${i}] needs width and height (prevents layout shift)`)
+  // })
 
   const r = c.rsvp
   if (r) {

@@ -22,16 +22,24 @@ export type ThemeToken =
   | 'inverse-bg'
   | 'inverse-ink'
 
-export type SectionId =
+
+  export type SectionId =
   | 'hero'
   | 'story'
-  | 'countdown'
-  | 'schedule'
   | 'venue'
-  | 'details'
-  | 'gallery'
   | 'rsvp'
   | 'footer'
+
+// export type SectionId =
+//   | 'hero'
+//   | 'story'
+//   | 'countdown'
+//   | 'schedule'
+//   | 'venue'
+//   | 'details'
+//   | 'gallery'
+//   | 'rsvp'
+//   | 'footer'
 
 export interface Person {
   /** Used in the hero and nav, e.g. "Elena". */
@@ -126,27 +134,27 @@ export interface WeddingConfig {
   story?: SectionCopy & {
     message: string[]
     quote?: { text: string; cite: string }
-    chapters: { label: string; title: string; body: string }[]
+    // chapters: { label: string; title: string; body: string }[]
   }
 
-  countdown?: SectionCopy & {
-    /** Shown while the event is in progress. */
-    during: string
-    /** Shown after the event has ended. */
-    after: string
-  }
+  // countdown?: SectionCopy & {
+  //   /** Shown while the event is in progress. */
+  //   during: string
+  //   /** Shown after the event has ended. */
+  //   after: string
+  // }
 
-  schedule?: SectionCopy & {
-    items: { time: string; title: string; description?: string; place?: string }[]
-  }
+  // schedule?: SectionCopy & {
+  //   items: { time: string; title: string; description?: string; place?: string }[]
+  // }
 
-  details?: SectionCopy & {
-    items: { title: string; body: string }[]
-  }
+  // details?: SectionCopy & {
+  //   items: { title: string; body: string }[]
+  // }
 
-  gallery?: SectionCopy & {
-    images: ImageAsset[]
-  }
+  // gallery?: SectionCopy & {
+  //   images: ImageAsset[]
+  // }
 
   rsvp?: SectionCopy & {
     intro: string

@@ -51,10 +51,10 @@ export function resolveWedding(c: WeddingConfig): Wedding {
 
   // A section whose list is empty would render a heading over nothing: skip it (and its nav entry) instead.
   const empty: Partial<Record<SectionId, boolean>> = {
-    story: !c.story?.message.length && !c.story?.chapters.length,
-    schedule: !c.schedule?.items.length,
-    details: !c.details?.items.length,
-    gallery: !c.gallery?.images.length,
+    // story: !c.story?.message.length && !c.story?.chapters.length,
+    // schedule: !c.schedule?.items.length,
+    // details: !c.details?.items.length,
+    // gallery: !c.gallery?.images.length,
   }
   const sections = c.sections.filter((id) => !empty[id])
 

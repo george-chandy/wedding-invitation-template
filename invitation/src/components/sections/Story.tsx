@@ -23,7 +23,7 @@ export function Story({ w }: { w: Wedding }) {
         </div>
 
         <ol className="chapters">
-          {s.chapters.map((c, i) => (
+          {/* {s.chapters.map((c, i) => (
             <Reveal as="li" key={c.label} className="chapter" delay={i * 0.1}>
               <span className="chapter__label">{c.label}</span>
               <div>
@@ -31,7 +31,7 @@ export function Story({ w }: { w: Wedding }) {
                 <p className="chapter__body">{c.body}</p>
               </div>
             </Reveal>
-          ))}
+          ))} */}
         </ol>
       </div>
     </section>
