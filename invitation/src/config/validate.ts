@@ -72,6 +72,14 @@ function check(c: WeddingConfig): WeddingConfig {
   const text = (v: unknown) => typeof v === 'string' && v.trim().length > 0
   const str = (v: unknown) => typeof v === 'string'
   const list = (v: unknown): v is unknown[] => Array.isArray(v)
+  /** Optional art-direction fields shared by every image: `focus` ("x% y%") and `srcSet` ("path 560w, path 1120w"). */
+  const imageOptions = (img: { focus?: unknown; srcSet?: unknown }, where: string) => {
+    if (img.focus !== undefined) need(typeof img.focus === 'string' && /^\d{1,3}(\.\d+)?% \d{1,3}(\.\d+)?%$/.test(img.focus), `${where}.focus must look like "50% 30%"`)
+    if (img.srcSet !== undefined) {
+      const entries = typeof img.srcSet === 'string' ? img.srcSet.split(',').map((e) => e.trim()) : []
+      need(entries.length > 0 && entries.every((e) => /^[^\s,]+ \d+w$/.test(e) && !/^(javascript|data):/i.test(e)), `${where}.srcSet must look like "photos/a-560.webp 560w, photos/a-1120.webp 1120w"`)
+    }
+  }
 
   need(text(c.site?.title), 'site.title is required')
   need(text(c.site?.description), 'site.description is required')
@@ -156,7 +164,14 @@ function check(c: WeddingConfig): WeddingConfig {
   if (list(c.gallery?.images)) c.gallery!.images.forEach((img, i) => {
     need(text(img.alt), `gallery.images[${i}].alt is required (describe the image)`)
     need(img.width > 0 && img.height > 0, `gallery.images[${i}] needs width and height (prevents layout shift)`)
+    imageOptions(img, `gallery.images[${i}]`)
   })
+  for (const [name, img] of [['hero.image', c.hero?.image], ['venue.image', c.venue?.image]] as const) {
+    if (img === undefined) continue
+    need(img && typeof img === 'object' && text(img.alt), `${name}.alt is required (describe the image)`)
+    need(img && img.width > 0 && img.height > 0, `${name} needs width and height (prevents layout shift)`)
+    if (img && typeof img === 'object') imageOptions(img, name)
+  }
 
   const r = c.rsvp
   if (r) {

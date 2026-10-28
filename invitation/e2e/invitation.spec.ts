@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test'
+import { weddingConfig } from '../src/config/wedding'
 
 /** Collects console errors/warnings, page errors and failed/4xx-5xx requests. */
 function watch(page: Page) {
@@ -144,11 +145,12 @@ test.describe('invitation', () => {
 
   test('sections reveal on scroll and navigation links jump with history', async ({ page }) => {
     await expect(page.locator('.nav')).toHaveCount(0) // hidden over the hero
-    await page.locator('#venue').scrollIntoViewIfNeeded()
+    // Centre the (viewport-tall) venue scene: WebKit's scrollIntoViewIfNeeded only scrolls it into view, leaving the hero partly visible.
+    await page.evaluate(() => document.getElementById('venue')!.scrollIntoView({ block: 'center', behavior: 'instant' }))
     await expect(page.locator('.nav')).toBeVisible()
     await expect(page.locator('#venue-h').locator('xpath=..')).toHaveCSS('opacity', '1')
     await page.evaluate(() => window.scrollTo(0, 0))
-    await page.locator('#story').scrollIntoViewIfNeeded()
+    await page.evaluate(() => document.getElementById('story')!.scrollIntoView({ block: 'center', behavior: 'instant' }))
     await page.getByRole('navigation', { name: 'Sections' }).getByRole('link', { name: 'Schedule' }).click()
     await expect(page).toHaveURL(/#schedule$/)
     await expect(page.locator('#schedule')).toBeInViewport()
@@ -195,21 +197,24 @@ test.describe('invitation', () => {
 
   test('gallery images load with intrinsic sizes and lazy loading', async ({ page }) => {
     const imgs = page.locator('.plate img')
-    await expect(imgs).toHaveCount(4)
+    await expect(imgs).toHaveCount(weddingConfig.gallery!.images.length)
     for (const img of await imgs.all()) {
       await expect(img).toHaveAttribute('loading', 'lazy')
       await expect(img).toHaveAttribute('width', /\d+/)
       await expect(img).toHaveAttribute('height', /\d+/)
+      await expect(img).toHaveAttribute('srcset', /\.webp \d+w, .*\.webp \d+w/)
+      await expect(img).toHaveAttribute('sizes', /vw/)
       await img.scrollIntoViewIfNeeded()
       await expect.poll(() => img.evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth)).toBeGreaterThan(0)
     }
   })
 
   test('a broken gallery image falls back to a generated plate', async ({ page }) => {
-    await page.route('**/gallery/table.svg', (r) => r.fulfill({ status: 404, body: '' }))
+    await page.route('**/photos/gallery-rings-*.webp', (r) => r.fulfill({ status: 404, body: '' }))
     await page.reload()
     await page.getByRole('button', { name: 'Skip to invitation' }).click()
     await page.locator('#gallery').scrollIntoViewIfNeeded()
+    await page.locator('.plate').nth(1).scrollIntoViewIfNeeded() // lazy: the request starts when the plate nears the viewport
     await expect(page.locator('.plate [role="img"]')).toHaveCount(1)
   })
 })

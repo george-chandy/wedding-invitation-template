@@ -50,7 +50,17 @@ export interface ImageAsset {
    */
   src?: string
   alt: string
-  /** Intrinsic size; used for aspect-ratio so images never shift layout. */
+  /**
+   * Responsive candidates, "path 560w, path 1120w" (paths resolve like `src`, which stays the fallback).
+   * The browser picks one using the layout's `sizes`; supply two or three widths per photograph.
+   */
+  srcSet?: string
+  /**
+   * Focal point for the art-directed crop, "x% y%" (CSS object-position), e.g. "50% 30%".
+   * The layout crops every photograph to a fixed frame; this keeps the subject inside it.
+   */
+  focus?: string
+  /** Intrinsic size of `src`; used for aspect-ratio so images never shift layout. */
   width: number
   height: number
   caption?: string
@@ -108,6 +118,8 @@ export interface WeddingConfig {
     coordinates?: { lat: number; lng: number }
     description: string
     travel: TravelOption[]
+    /** Photograph for the venue plate (4:5). Omit (or let it fail to load) to show the line drawing. */
+    image?: ImageAsset
   }
 
   envelope: {
@@ -121,6 +133,8 @@ export interface WeddingConfig {
     greeting: string
     /** One line under the date, e.g. a city. */
     tagline: string
+    /** Photograph for the arched plate. Omit (or let it fail to load) to show the drawn plate. Portrait works best. */
+    image?: ImageAsset
   }
 
   story?: SectionCopy & {

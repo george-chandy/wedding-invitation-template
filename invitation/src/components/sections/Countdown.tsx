@@ -29,6 +29,7 @@ export function Countdown({ w }: { w: Wedding }) {
 
   return (
     <section id="countdown" className="section section--inverse countdown" aria-labelledby="countdown-h" tabIndex={-1}>
+      <span className="countdown__mark" aria-hidden="true">{w.couple.monogram[0]}<i>{w.couple.monogram[1]}</i></span>
       <div className="container container--wide">
         <SectionHeading id="countdown-h" center eyebrow={c.eyebrow} title={c.heading} />
         <Reveal delay={0.1}>

@@ -16,9 +16,11 @@
   --fs-body: clamp(0.9375rem, 0.9rem + 0.15vw, 1.0625rem);
   --fs-lead: clamp(1.3rem, 1.12rem + 0.8vw, 1.75rem);
   --fs-h3: clamp(1.6rem, 1.35rem + 1vw, 2.25rem);
-  --fs-h2: clamp(2.5rem, 1.7rem + 3.4vw, 4.75rem);
-  --fs-display: clamp(4rem, 2.2rem + 8.5vw, 10rem);
-  --fs-numeral: clamp(2.5rem, 1.4rem + 5vw, 5.5rem);
+  --fs-h2: clamp(2.6rem, 1.5rem + 4.6vw, 6.25rem);
+  --fs-display: clamp(4.25rem, min(1.6rem + 12.5vw, 20svh), 13rem); /* also capped by height so the hero composition fits short windows */
+  --fs-closing: clamp(3.25rem, 1.4rem + 8vw, 8.5rem);
+  --fs-count: clamp(3.25rem, 1rem + 9vw, 10rem);
+  --fs-folio: clamp(3rem, 1.5rem + 5vw, 6.5rem);
   --fs-script: clamp(2rem, 1.6rem + 1.8vw, 3.25rem);
   --fs-nav: 0.75rem;
   --fs-button: 0.75rem;
@@ -47,14 +49,13 @@
   /* ---------- layout ---------- */
   --w-prose: 38rem;
   --w-content: 68rem;
-  --w-wide: 82rem;
+  --w-wide: 88rem;
   --nav-h: 3.75rem;
 
   /* ---------- shape ---------- */
   --radius-sm: 2px;
   --radius-md: 4px;
   --radius-pill: 999px;
-  --radius-arch: 999px 999px 0 0;
   --border: 1px solid var(--color-line);
 
   /* ---------- elevation ---------- */
@@ -68,6 +69,8 @@
   --dur-slow: 0.9s;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  /* ---------- material ---------- */
+  --grain-size: 160px;
 
   /* ---------- layers ---------- */
   --z-base: 0;

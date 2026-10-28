@@ -164,6 +164,18 @@ test.describe('config validation', () => {
     expect(bad((c) => (c.gallery!.images[0].alt = ''))).toContain('alt')
     expect(bad((c) => (c.gallery!.images[0].width = 0))).toContain('width and height')
   })
+  test('photograph options: hero/venue images need alt and size; focus and srcSet are strictly formatted', () => {
+    expect(bad((c) => (c.hero.image = { src: 'photos/a.webp', alt: '', width: 10, height: 10 }))).toContain('hero.image.alt')
+    expect(bad((c) => (c.venue.image = { src: 'photos/a.webp', alt: 'x', width: 0, height: 10 }))).toContain('venue.image needs width and height')
+    expect(bad((c) => (c.gallery!.images[0].focus = 'url(javascript:alert(1))'))).toContain('focus must look like')
+    expect(bad((c) => (c.hero.image!.focus = '50%'))).toContain('hero.image.focus')
+    expect(bad((c) => (c.gallery!.images[0].srcSet = 'photos/a.webp'))).toContain('srcSet must look like')
+    expect(bad((c) => (c.gallery!.images[0].srcSet = 'javascript:alert(1) 100w'))).toContain('srcSet')
+    const noPhotos = clone()
+    noPhotos.hero.image = undefined
+    noPhotos.venue.image = undefined
+    expect(() => validateConfig(noPhotos)).not.toThrow()
+  })
   test('reports every problem at once', () => {
     const msg = bad((c) => {
       c.event.date = 'x'

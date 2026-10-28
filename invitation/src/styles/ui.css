@@ -101,3 +101,16 @@ fieldset.field { border: 0; padding: 0; margin: 0; min-width: 0; }
 .status { font-size: var(--fs-caption); line-height: 1.5; }
 .status--ok { color: var(--color-ok); }
 .status--error { color: var(--color-error); }
+
+/* ---------- printed-form fields (the RSVP reply card) ---------- */
+.rsvp__form .input {
+  padding-inline: 0;
+  border: 0;
+  border-bottom: 1px solid var(--color-line-strong);
+  border-radius: 0;
+  background: transparent;
+}
+.rsvp__form textarea.input { border: 1px solid var(--color-line-strong); padding: 0.7rem 0.8rem; }
+.rsvp__form .input:focus-visible { box-shadow: 0 1px 0 0 var(--color-focus); border-color: var(--color-focus); }
+.rsvp__form textarea.input:focus-visible { box-shadow: 0 0 0 1px var(--color-focus); }
+.rsvp__form .choice span { border-radius: 0; background: transparent; }

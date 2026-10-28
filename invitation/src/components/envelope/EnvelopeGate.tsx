@@ -30,6 +30,7 @@ const T = { reveal: 1.9 }
  *   .env__seal                CSS transition (hover / pressed scale)
  *   .env__seal-art            Motion (scale, opacity)
  *   .env__flap                Motion (rotateX, zIndex)
+ *   .env__flap-shadow         Motion (opacity)
  *   .env__letter              Motion (y, scale, opacity)
  *   .env__stage               Motion (y, scale)
  *   .gate (root)              Motion (opacity)
@@ -91,8 +92,10 @@ export function EnvelopeGate({ wedding, onReveal, onOpened }: Props) {
       // 2. flap swings up and over the hinge; drops behind the letter once it is edge-on
       play(q('.env__flap'), { transform: ['rotateX(0deg)', 'rotateX(180deg)'] }, { duration: 0.95, delay: 0.3, ease: inOut })
       play(q('.env__flap'), { zIndex: [5, 1] }, { duration: 0.001, delay: 0.3 + 0.47 })
+      // the flap's cast shadow lifts away with it
+      play(q('.env__flap-shadow'), { opacity: [1, 0] }, { duration: 0.6, delay: 0.35, ease: 'easeIn' })
       // 3 + 4. letter rises out of the pocket, then swells toward the reader (one animation: no overlapping transforms)
-      play(q('.env__letter'), { transform: ['translateY(0%)', 'translateY(-56%)', 'translateY(-56%) scale(1.18)'], offset: [0, 0.5, 1] }, { duration: 1.85, delay: 1.0, ease: [out, inOut] })
+      play(q('.env__letter'), { transform: ['translateY(0%)', 'translateY(-62%)', 'translateY(-62%) scale(1.22)'], offset: [0, 0.5, 1] }, { duration: 1.85, delay: 1.0, ease: [out, inOut] })
       play(q('.env__letter'), { opacity: [1, 0] }, { duration: 0.5, delay: t, ease: 'easeIn' })
       // 5. the scene settles back and the whole overlay dissolves into the hero
       play(q('.env__stage'), { transform: ['translateY(0px) scale(1)', 'translateY(18px) scale(0.97)'] }, { duration: 0.85, delay: t - 0.1, ease: inOut })
@@ -153,11 +156,13 @@ export function EnvelopeGate({ wedding, onReveal, onOpened }: Props) {
             <span className="env__shadow" />
             <span className="env__back" />
             <span className="env__letter" aria-hidden="true">
+              <span className="env__letter-arch" />
               <span className="env__letter-name">{a.first} <i>&amp;</i> {b.first}</span>
               <span className="env__letter-rule" />
               <span className="env__letter-line">{wedding.labels.dateNumeric}</span>
             </span>
             <Pocket />
+            <span className="env__flap-shadow" />
             <Flap />
             <span className="env__seal" aria-hidden="true">
               <span className="env__seal-art"><Seal monogram={couple.monogram} /></span>

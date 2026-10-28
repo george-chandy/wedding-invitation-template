@@ -36,6 +36,15 @@
   --color-btn-bg-hover: #31402f;
   --color-ok: #3f6b45;
   --color-error: #9a2f2f;
+  /* material: tonal plate (arch/venue), emboss highlight/shade, paper grain (rasterised once; no live filter) */
+  --color-sun: color-mix(in srgb, var(--color-surface) 90%, white);
+  /* how much of the page colour veils the foot of a hero photograph, so the names stay legible over it */
+  --wash-low: 58%;
+  --wash-high: 20%;
+  --color-plate: #e6dcc6;
+  --color-plate-deep: #d6c8a8;
+  --color-emboss-hi: rgb(255 255 255 / 0.7);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.27 0 0 0 0 0.13 0 0 0 0.34 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 :root[data-theme='midnight'] {
@@ -69,4 +78,11 @@
   --color-btn-bg-hover: #e8cf9c;
   --color-ok: #8fc79a;
   --color-error: #f09a9a;
+  --color-sun: rgb(217 189 132 / 0.55);
+  --wash-low: 82%;
+  --wash-high: 48%;
+  --color-plate: #243842;
+  --color-plate-deep: #1a2a32;
+  --color-emboss-hi: rgb(255 240 210 / 0.16);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.92 0 0 0 0 0.85 0 0 0 0 0.7 0 0 0 0.2 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
 }

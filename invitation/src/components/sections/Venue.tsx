@@ -1,14 +1,21 @@
+import { useCallback, useState } from 'react'
 import type { Wedding } from '../../config'
 import { useCopy } from '../../hooks/useCopy'
 import { Reveal } from '../animations/Reveal'
+import { Unveil } from '../animations/Unveil'
 import { OrangeryArch } from '../art/OrangeryArch'
 import { Icon } from '../ui/Icon'
+import { Photo } from '../ui/Photo'
 import { SectionHeading } from '../ui/Heading'
 
 export function Venue({ w }: { w: Wedding }) {
   const s = w.strings
   const v = w.venue
   const { state, copy } = useCopy(w.venueLine)
+  const [photoFailed, setPhotoFailed] = useState(false)
+  const onPhotoFail = useCallback(() => setPhotoFailed(true), [])
+  // No photograph configured (or it failed to load): the line drawing stands in.
+  const photo = v.image?.src && !photoFailed ? v.image : undefined
   const place = v.coordinates ? `${v.coordinates.lat},${v.coordinates.lng}` : w.mapsQuery
   const q = encodeURIComponent(place)
 
@@ -16,9 +23,20 @@ export function Venue({ w }: { w: Wedding }) {
     <section id="venue" className="section venue" aria-labelledby="venue-h" tabIndex={-1}>
       <div className="container">
         <div className="venue__grid">
-          <div className="venue__art">
-            <OrangeryArch label={`Line drawing of ${v.name}`} />
-          </div>
+          <Unveil className="venue__plate-wrap">
+            <div className={`venue__plate paper${photo ? ' venue__plate--photo' : ''}`}>
+              {photo ? (
+                <Photo img={photo} sizes="(min-width: 1024px) 46vw, 92vw" onFail={onPhotoFail} />
+              ) : (
+                <>
+                  <span className="venue__sun" aria-hidden="true" />
+                  <div className="venue__art">
+                    <OrangeryArch label={`Line drawing of ${v.name}`} />
+                  </div>
+                </>
+              )}
+            </div>
+          </Unveil>
 
           <div className="venue__info">
             <SectionHeading id="venue-h" eyebrow={s.venueEyebrow} title={v.name} />

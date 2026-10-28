@@ -160,10 +160,20 @@ test.describe('animation behaviour', () => {
     await page.locator('.env').click()
     await expect(page.locator('.gate')).toHaveCount(0, { timeout: 3000 })
     const hidden = await page.evaluate(() =>
-      [...document.querySelectorAll<HTMLElement>('main *, footer *')].filter((el) => getComputedStyle(el).opacity === '0' && !el.closest('svg') && el.tagName !== 'INPUT').map((el) => el.className),
+      [...document.querySelectorAll<HTMLElement>('main *, footer *')]
+        // A photograph whose bytes have not arrived yet (lazy-loaded, below the fold) is a frame showing its tonal ground, not hidden content.
+        // Its fade is plain CSS keyed to the browser's load event, so it does not depend on WAAPI; the next lines prove that.
+        .filter((el) => getComputedStyle(el).opacity === '0' && !el.closest('svg') && el.tagName !== 'INPUT' && !el.matches('img.photo[data-state="loading"]'))
+        .map((el) => el.className),
     )
     expect(hidden).toEqual([])
     await expect(page.locator('.hero__name').first()).toBeVisible()
+    // Photographs that have loaded are visible without WAAPI: the hero's already is, and the others are once scrolled to.
+    await expect(page.locator('.hero__window img.photo')).toHaveCSS('opacity', '1')
+    const first = page.locator('.plate img.photo').first()
+    await first.scrollIntoViewIfNeeded()
+    await expect(first).toHaveAttribute('data-state', 'loaded')
+    await expect(first).toHaveCSS('opacity', '1')
   })
 
   test('if IntersectionObserver is unavailable all content renders immediately', async ({ page }) => {

@@ -10,9 +10,12 @@
   display: grid;
   place-items: center;
   padding: max(var(--space-5), env(safe-area-inset-top)) max(var(--space-5), env(safe-area-inset-right)) max(var(--space-5), env(safe-area-inset-bottom)) max(var(--space-5), env(safe-area-inset-left));
-  background: radial-gradient(ellipse 80% 60% at 50% 42%, var(--color-surface) 0%, var(--color-bg) 72%);
+  background:
+    radial-gradient(ellipse 60% 50% at 30% 18%, color-mix(in srgb, var(--color-surface) 90%, white) 0%, transparent 70%),
+    radial-gradient(ellipse 90% 70% at 50% 45%, var(--color-surface) 0%, var(--color-bg) 62%, color-mix(in srgb, var(--color-bg) 82%, var(--color-accent)) 100%);
   overflow: hidden;
 }
+.gate::before { content: ''; position: absolute; inset: 0; background: var(--grain); background-size: var(--grain-size); opacity: 0.5; pointer-events: none; }
 
 .gate__intro {
   display: grid;
@@ -76,15 +79,26 @@
 }
 .env__stage > * { position: absolute; display: block; }
 
-/* contact shadow: static gradient, no filter */
+/* contact shadow: two static gradients (tight + wide, offset away from the light), no filter */
 .env__shadow {
-  inset: auto 4% -7% 4%;
-  height: 14%;
+  inset: auto 2% -9% 6%;
+  height: 16%;
   border-radius: 50%;
-  background: radial-gradient(ellipse at center, rgb(40 30 10 / 0.32), transparent 70%);
+  background:
+    radial-gradient(ellipse 60% 45% at 52% 40%, rgb(40 30 10 / 0.42), transparent 72%),
+    radial-gradient(ellipse at center, rgb(40 30 10 / 0.2), transparent 75%);
   z-index: 0;
 }
-.env__back { inset: 0; z-index: 1; background: linear-gradient(180deg, var(--color-paper-dark), color-mix(in srgb, var(--color-paper-dark) 88%, black)); border-radius: 3px; box-shadow: var(--shadow-md); }
+.env__back {
+  inset: 0; z-index: 1; border-radius: 3px;
+  /* tissue liner: fine diagonal print over the darker paper, then grain */
+  background:
+    var(--grain),
+    repeating-linear-gradient(45deg, transparent 0 7px, color-mix(in srgb, var(--color-accent) 22%, transparent) 7px 8px),
+    linear-gradient(180deg, color-mix(in srgb, var(--color-paper-dark) 92%, black), color-mix(in srgb, var(--color-paper-dark) 80%, black));
+  background-size: var(--grain-size), auto, auto;
+  box-shadow: 0 1px 0 var(--color-emboss-hi) inset, 0 18px 34px -16px rgb(40 30 10 / 0.5), 0 3px 8px -2px rgb(40 30 10 / 0.18);
+}
 
 .env__letter {
   left: 6%;
@@ -96,12 +110,23 @@
   align-content: start;
   justify-items: center;
   gap: 2cqw;
-  padding-top: 9cqw;
-  background: var(--color-surface);
+  padding-top: 22cqw;
+  background: var(--grain), var(--color-surface);
+  background-size: var(--grain-size), auto;
   border: 1px solid var(--color-line);
   border-radius: 2px;
   box-shadow: 0 1px 6px rgb(40 30 10 / 0.16);
   text-align: center;
+}
+/* the card's arched window: the same shape the hero is built on, so the card becomes the page */
+.env__letter-arch {
+  position: absolute !important;
+  top: 5cqw; left: 50%; translate: -50% 0;
+  width: 24cqw; height: 15cqw;
+  border: 1px solid var(--color-line-strong);
+  border-bottom: 0;
+  border-radius: 999px 999px 0 0;
+  background: color-mix(in srgb, var(--color-plate) 70%, transparent);
 }
 .env__letter::before { /* inset hairline frame */
   content: '';
@@ -110,12 +135,21 @@
   border: 1px solid var(--color-line);
   pointer-events: none;
 }
-.env__letter-name { font-family: var(--font-display); font-weight: 300; font-size: 10.5cqw; line-height: 1; letter-spacing: -0.01em; color: var(--color-ink); }
-.env__letter-name i { font-weight: 400; color: var(--color-accent-strong); }
+.env__letter-name { font-family: var(--font-display); font-weight: 300; font-size: 8.5cqw; line-height: 1; letter-spacing: -0.015em; color: var(--color-ink); text-shadow: 0 1px 0 var(--color-emboss-hi); }
+.env__letter-name i { font-weight: 300; color: var(--color-accent-strong); }
 .env__letter-rule { width: 18cqw; height: 1px; background: var(--color-accent); opacity: 0.8; }
 .env__letter-line { font-family: var(--font-ui); font-weight: 500; font-size: 2.3cqw; letter-spacing: 0.3em; text-transform: uppercase; color: var(--color-ink-muted); }
 
-.env__pocket { inset: 0; width: 100%; height: 100%; z-index: 3; pointer-events: none; }
+.env__pocket { inset: 0; width: 100%; height: 100%; z-index: 3; pointer-events: none; filter: none; }
+
+/* the flap's cast shadow on the pocket below it; fades as the flap lifts */
+.env__flap-shadow {
+  left: 3%; right: 3%; top: 0; height: 62%;
+  z-index: 4;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: linear-gradient(180deg, rgb(40 30 10 / 0.22), rgb(40 30 10 / 0) 78%);
+  pointer-events: none;
+}
 
 .env__flap {
   left: 0;

@@ -37,7 +37,8 @@ test.describe('long names and accented characters', () => {
     await captureReady(page)
     await expect(page.locator('#invitation-title')).toContainText('Łukasz')
     expect(fonts.some((f) => f.includes('latin-ext'))).toBe(true)
-    const ok = await page.evaluate(() => document.fonts.check('300 40px "Cormorant Garamond"', 'Łukasz'))
+    // The second name is set in light italic by design, so the italic face must be loaded for it too.
+    const ok = await page.evaluate(() => document.fonts.check('italic 300 40px "Cormorant Garamond"', 'Łukasz') && document.fonts.check('300 40px "Cormorant Garamond"', 'Zoë'))
     expect(ok).toBe(true)
   })
 
@@ -60,7 +61,7 @@ test.describe('optional sections and ordering', () => {
     await captureReady(page)
     await expect(page.locator('main > *')).toHaveCount(2)
     await expect(page.locator('footer')).toHaveCount(0)
-    await page.locator('#venue').scrollIntoViewIfNeeded()
+    await page.evaluate(() => document.getElementById('venue')!.scrollIntoView({ block: 'center', behavior: 'instant' })) // see invitation.spec.ts: scrollIntoViewIfNeeded is engine-dependent for tall sections
     await expect(page.locator('.nav__links a')).toHaveText(['Venue'])
     await expect(page.locator('.hero__cue')).toHaveAttribute('href', '#venue')
     expect(problems).toEqual([])

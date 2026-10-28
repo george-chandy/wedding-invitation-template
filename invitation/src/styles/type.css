@@ -1,5 +1,10 @@
-/* Typography roles. Display + body copy: Cormorant. UI, labels, dense text: Montserrat. Script: one accent only. */
-
+/*
+ * Typography roles.
+ *   Display / editorial / numerals: Cormorant Garamond, 300 roman + 300 italic (contrast comes from scale and style, not weight).
+ *   Supporting serif (lead, quotes, addresses): Cormorant Garamond 400.
+ *   Metadata (labels, nav, dates, captions, buttons): Montserrat 500, uppercase, tracked.
+ *   Handwritten accent: Great Vibes, used once (the hero greeting).
+ */
 .eyebrow,
 .label {
   font-family: var(--font-ui);
@@ -9,14 +14,39 @@
   text-transform: uppercase;
   line-height: 1.5;
 }
-
 .eyebrow {
   display: inline-flex;
   align-items: center;
   gap: var(--space-4);
   color: var(--color-accent-strong);
 }
+/* Plain rule (footer, anywhere without a folio). */
 .eyebrow::before {
+  content: '';
+  width: 2.25rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.7;
+}
+/* Section eyebrows carry a folio number: the CSS counter follows whatever sections the config keeps. */
+main { counter-reset: scene; }
+.heading { counter-increment: scene; }
+.heading .eyebrow::before {
+  content: counter(scene, decimal-leading-zero);
+  width: auto;
+  height: auto;
+  background: none;
+  opacity: 1;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.heading .eyebrow::after {
+  content: '';
+  width: clamp(2rem, 6vw, 4.5rem);
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+}
+.footer .eyebrow::after {
   content: '';
   width: 2.25rem;
   height: 1px;
@@ -28,12 +58,11 @@
   font-family: var(--font-display);
   font-weight: 300;
   font-size: var(--fs-h2);
-  line-height: var(--lh-heading);
-  letter-spacing: -0.012em;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
   text-wrap: balance;
 }
-.h2 em, .h3 em { font-style: italic; font-weight: 400; }
-
+.h2 em, .h3 em { font-style: italic; font-weight: 300; }
 .h3 {
   font-family: var(--font-display);
   font-weight: 400;
@@ -41,7 +70,6 @@
   line-height: var(--lh-heading);
   text-wrap: balance;
 }
-
 .lead {
   font-family: var(--font-display);
   font-weight: 400;
@@ -49,10 +77,8 @@
   line-height: var(--lh-lead);
   text-wrap: pretty;
 }
-
 .muted { color: var(--color-ink-muted); }
 .prose p + p { margin-top: var(--space-4); }
-
 .script {
   font-family: var(--font-script);
   font-weight: 400;
@@ -60,20 +86,16 @@
   line-height: 1.2;
   color: var(--color-accent-strong);
 }
-
 .numeral {
   font-family: var(--font-display);
   font-weight: 300;
   font-variant-numeric: lining-nums tabular-nums;
   line-height: 1;
 }
+.italic-numeral { font-style: italic; }
 
-/* centred eyebrows get a matching rule on the right */
-.heading--center .eyebrow::after,
-.footer .eyebrow::after {
-  content: '';
-  width: 2.25rem;
-  height: 1px;
-  background: currentColor;
-  opacity: 0.7;
+/* Paper: a tonal surface with the rasterised grain tile on top (never a live filter). */
+.paper {
+  background-image: var(--grain);
+  background-size: var(--grain-size);
 }

@@ -21,7 +21,7 @@ interface RevealProps {
  *  - opacity/transform only → no layout shift
  *  - reduced motion: renders a plain element, content visible immediately
  */
-export function Reveal({ as = 'div', delay = 0, y = 24, className, children }: RevealProps) {
+export function Reveal({ as = 'div', delay = 0, y = 16, className, children }: RevealProps) {
   const reduce = useStaticMotion()
   if (reduce) {
     const Plain = as

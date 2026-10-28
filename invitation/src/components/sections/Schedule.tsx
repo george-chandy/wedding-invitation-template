@@ -14,6 +14,7 @@ export function Schedule({ w }: { w: Wedding }) {
         <div className="schedule__grid">
         <SectionHeading id="schedule-h" eyebrow={s.eyebrow} title={s.heading} className="schedule__head">
           <p className="lead muted">{w.labels.dateLong}</p>
+          <p className="schedule__where label muted">{w.venue.name}</p>
         </SectionHeading>
         <ol className="timeline">
           {reduce ? (

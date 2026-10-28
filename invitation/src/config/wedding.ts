@@ -50,6 +50,15 @@ export const weddingConfig: WeddingConfig = {
       { icon: 'plane', label: 'Meadowbrook Airport', detail: '18 km · 25 minutes by car' },
       { icon: 'car', label: 'Village green parking', detail: '300 m · a four-minute walk' },
     ],
+    // Development placeholder (see public/photos/CREDITS.md): replace with a photograph of your venue. Omit it for the line drawing.
+    image: {
+      src: 'photos/venue-palm-house-1120.webp',
+      srcSet: 'photos/venue-palm-house-560.webp 560w, photos/venue-palm-house-1120.webp 1120w',
+      focus: '50% 45%',
+      alt: 'A domed glasshouse and its reflection in a still pool, a couple small on the steps',
+      width: 1120,
+      height: 1400,
+    },
   },
 
   envelope: {
@@ -61,6 +70,15 @@ export const weddingConfig: WeddingConfig = {
   hero: {
     greeting: 'Together with their families',
     tagline: 'Meadowbrook, England',
+    // Development placeholder (see public/photos/CREDITS.md): replace with your own portrait. Omit it for the drawn plate.
+    image: {
+      src: 'photos/hero-embrace-1120.webp',
+      srcSet: 'photos/hero-embrace-560.webp 560w, photos/hero-embrace-1120.webp 1120w',
+      focus: '50% 38%',
+      alt: 'A bride in a veil, her back to the camera, held close by her groom',
+      width: 1120,
+      height: 1430,
+    },
   },
 
   story: {
@@ -114,11 +132,63 @@ export const weddingConfig: WeddingConfig = {
   gallery: {
     eyebrow: 'Glimpses',
     heading: 'The setting',
+    // Development placeholders (see public/photos/CREDITS.md). Each frame is cropped to a fixed ratio by position:
+    // 1 → 4:5, 2 → 5:4, 3 → 1:1, 4 → 3:4, then the pattern repeats. `focus` keeps the subject inside the crop.
     images: [
-      { src: 'gallery/orangery.svg', alt: 'Illustration of the arched glasshouse windows', width: 800, height: 1000, caption: 'The Orangery' },
-      { src: 'gallery/table.svg', alt: 'Illustration of a long table with candles', width: 1000, height: 750, caption: 'Supper under the lanterns' },
-      { src: 'gallery/garden.svg', alt: 'Illustration of a garden path lined with trees', width: 1000, height: 750, caption: 'The lime avenue' },
-      { src: 'gallery/bouquet.svg', alt: 'Illustration of a loose seasonal bouquet', width: 800, height: 1000, caption: 'Seasonal flowers' },
+      {
+        src: 'photos/gallery-dress-1120.webp',
+        srcSet: 'photos/gallery-dress-560.webp 560w, photos/gallery-dress-1120.webp 1120w',
+        focus: '50% 45%',
+        alt: 'A lace wedding dress hanging beneath a chandelier in an arched corridor',
+        width: 1120,
+        height: 1394,
+        caption: 'The dress, waiting',
+      },
+      {
+        src: 'photos/gallery-rings-1280.webp',
+        srcSet: 'photos/gallery-rings-640.webp 640w, photos/gallery-rings-1280.webp 1280w',
+        focus: '55% 55%',
+        alt: 'A bride’s open hands holding two gold wedding bands',
+        width: 1280,
+        height: 1025,
+        caption: 'Two rings',
+      },
+      {
+        src: 'photos/gallery-church-1100.webp',
+        srcSet: 'photos/gallery-church-560.webp 560w, photos/gallery-church-1100.webp 1100w',
+        focus: '40% 50%',
+        alt: 'Flowers tied to the end of a church pew in low, window-lit light',
+        width: 1100,
+        height: 1101,
+        caption: 'Flowers in the pew',
+      },
+      {
+        src: 'photos/gallery-bouquet-1120.webp',
+        srcSet: 'photos/gallery-bouquet-560.webp 560w, photos/gallery-bouquet-1120.webp 1120w',
+        focus: '50% 30%',
+        alt: 'A bride holding a bouquet of pink roses and silver berries against her white skirt',
+        width: 1120,
+        height: 1494,
+        caption: 'Seasonal flowers',
+      },
+      {
+        src: 'photos/gallery-hands-1120.webp',
+        srcSet: 'photos/gallery-hands-560.webp 560w, photos/gallery-hands-1120.webp 1120w',
+        focus: '50% 50%',
+        alt: 'Black-and-white close-up of two hands, a ring being slipped onto a finger',
+        width: 1120,
+        height: 1400,
+        caption: 'Hands',
+      },
+      {
+        src: 'photos/gallery-footbridge-1280.webp',
+        srcSet: 'photos/gallery-footbridge-640.webp 640w, photos/gallery-footbridge-1280.webp 1280w',
+        focus: '25% 40%',
+        alt: 'A couple seated on a wooden footbridge among tall grass',
+        width: 1280,
+        height: 1020,
+        caption: 'On the footbridge',
+      },
     ],
   },
 

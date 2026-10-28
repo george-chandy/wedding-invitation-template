@@ -43,7 +43,7 @@ src/
   hooks/        useNow, useCopy, useScrollLock, observers
   lib/          time (timezone), calendar (Google URL + ICS), rsvp, assets
   styles/       tokens, themes, fonts, base, type, ui, gate, nav, sections, motion
-public/         favicon, og.png, gallery/, robots.txt
+public/         favicon, og.png, photos/ (placeholder photographs + CREDITS.md), robots.txt
 tests/          unit specs (Playwright runner, Node only)
 e2e/            browser specs
 __screenshots__/ screenshot baselines (per browser)
